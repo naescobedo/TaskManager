@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Fragment } from 'react';
+
+//Components
+import InputTask from './components/InputTask';
+import ListTasks from './components/ListTask';
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return( 
+    <Fragment> <div className="container" style= {{backgroundColor: '#222529'}}>
+      <InputTask />
+      <ListTasks />
     </div>
-  );
+
+    </Fragment>
+    );
 }
 
 export default App;
